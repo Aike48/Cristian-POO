@@ -30,6 +30,7 @@ public class Flecha {
 	this.longitud=longitud;
 	this.color=color;
 }
+	
 	public void pedirDatos() {
 		String cadena;
 		cadena = JOptionPane.showInputDialog(null, "Ingrese la longitud que desea ponerle a la flecha:");
