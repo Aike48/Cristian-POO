@@ -36,8 +36,16 @@ public class Flecha {
 		cadena = JOptionPane.showInputDialog(null, "Ingrese la longitud que desea ponerle a la flecha:");
 		longitud = Integer.parseInt(cadena);
 		
-		cadena = JOptionPane.showInputDialog(null, "Ingrese el color que desea para la flecha entre el rojo y negro:");
-		color = cadena;
+		cadena = JOptionPane.showInputDialog(null, "Ingrese el color que desea para la flecha (1 para negro y 2 para rojo)");
+		if (cadena.equals("1")) {
+			color = "negro";
+		} 
+		else if (cadena.equals("2")) {
+			color = "rojo";
+		}
+		else {JOptionPane.showMessageDialog(null, "Ingresó un valor no válido, el color por defecto será negro");
+		color = "negro";}
+		
 		
 		construirFlecha();
 		inprimirEspacio();
